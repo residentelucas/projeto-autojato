@@ -18,26 +18,26 @@
     
     <div class="sidebar">
         <div class="logo-details">
-            <div class="logo_name">AUTOJATO</div>
+            <div class="logo_name">Autojato</div>
             <i class='bx bx-menu' id="btn" ></i>
         </div>
         <ul class="nav-list">
           <li>
-            <a href="http://127.0.0.1:8000/clientes/">
+            <a href="#">
               <i class='bx bx-grid-alt'></i>
               <span class="links_name">Página inicial</span>
             </a>
             <span class="tooltip">Página inicial</span>
           </li>
           <li>
-          <a href="http://127.0.0.1:8000/clientes/">
+          <a href="{% url 'clientes' %}">
             <i class='bx bx-user' ></i>
             <span class="links_name">Clientes</span>
           </a>
           <span class="tooltip">Clientes</span>
         </li>
         <li>
-          <a href="http://127.0.0.1:8000/servicos/novo_servico/">
+          <a href="{% url 'novo_servico' %}">
             <i class='bx bx-chat' ></i>
             <span class="links_name">Serviços</span>
           </a>
@@ -51,7 +51,7 @@
           <span class="tooltip">Agenda</span>
         </li>
         <li>
-          <a href="http://127.0.0.1:8000/servicos/listar_servico/">
+          <a href="{% url 'listar_servico' %}">
             <i class='bx bx-cog' ></i>
             <span class="links_name">Histórico</span>
           </a>

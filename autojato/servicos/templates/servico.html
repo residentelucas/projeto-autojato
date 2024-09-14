@@ -37,13 +37,13 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="{% url 'servico_adicional' servico.identificador %}" method="POST">{% csrf_token %}
+                <form action="{% url 'servico_adicional' %}" method="POST">{% csrf_token %}
                     <input type="hidden" name="identificador_servico" value={{servico.identificador}}>
 
                     <label>Digite o título:</label>
                     <input type="text" placeholder="titulo" class="form-control" name="titulo">
 
-                    <label>Digite a descrição:</label>
+                    <label>Digite o descrição:</label>
                     <input type="text" placeholder="titulo" class="form-control" name="descricao">
     
 
