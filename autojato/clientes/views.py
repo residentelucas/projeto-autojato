@@ -8,6 +8,9 @@ from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
 
+def home(request):
+    return render(request, 'clientes/home.html')
+
 def clientes(request):
     if request.method == "GET":
         clientes_list = Cliente.objects.all()
